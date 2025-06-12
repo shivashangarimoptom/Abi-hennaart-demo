@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <title>Henna Creations & Supplies</title> 
+  <!-- AOS Animation Library -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  
+  <style>
+    body {
+      background-color: #3a0400;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    a {
+      text-decoration: none;
+      color: #FFD700;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .testimonial-card {
+      background-color: #5a0f00;
+      padding: 20px;
+      border-radius: 10px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+
+    .testimonial-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(255, 215, 0, 0.3);
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- Header -->
+<header style="background-color: #3a0400; padding: 20px; display: flex; justify-content: space-between; align-items: center; border-bottom: 3px solid #c59d5f;">
+  <div class="logo" style="display: flex; align-items: center;">
+    <img src="logo.png" alt="Abi Henna Logo" style="width: 60px; height: 60px; border-radius: 50%; border: 3px solid #FFD700; padding: 5px; object-fit: cover;">
+    <h1 style="font-size: 30px; color: #e3c785; font-family: 'Garamond', serif; margin-left: 15px;">Abi Henna</h1>
+  </div>
+  <nav>
+    <ul style="list-style: none; display: flex; gap: 20px; margin: 0; padding: 0;">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="mehndi.html">Mehndi Products</a></li>
+      <li><a href="bridal.html">Bridal Mehndi Services</a></li>
+      <li><a href="education.html">Education & Certification</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="hero" style="text-align: center; margin: 30px 0; position: relative;">
+  <img src="hero-image.jpg" alt="Hero Image" style="width: 100%; max-height: 500px; object-fit: cover; opacity: 20%;">
+  <div class="hero-text" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #fff;">
+    <h1>Welcome to Abi Henna</h1>
+    <p style="font-size: 24px; color: #e3c785; text-align: center; margin-bottom: 40px; line-height: 1.5;">
+      Your one-stop shop for elegant traditional Mehndi designs
+    </p>
+  </div>
+</section>
+<!-- Testimonials Section -->
+<section style="background-color: #4d0d00; color: #FFD700; padding: 60px 20px;">
+  <h2 style="text-align: center; font-size: 32px; margin-bottom: 40px; border-bottom: 2px solid #FFD700; display: inline-block;">What Our Customers Say</h2>
+
+  <!-- Mehndi Services -->
+  <div style="margin-top: 40px;">
+    <h3 style="font-size: 26px; color: #e3c785; margin-bottom: 20px;">Mehndi Services</h3>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+      <div class="testimonial-card" data-aos="fade-up">"The bridal design was absolutely stunning. Everyone loved it!"<br><br><strong>- Aishwarya</strong></div>
+      <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">"Got a party mehndi done and it looked fabulous all night!"<br><br><strong>- Neha</strong></div>
+      <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">"Customized designs made my engagement even more special!"<br><br><strong>- Shruti</strong></div>
+      <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">"Mehndi night was magical thanks to Abi Henna’s beautiful art!"<br><br><strong>- Reema</strong></div>
+    </div>
+  </div>
+
+  <!-- Mehndi Products -->
+  <div style="margin-top: 60px;">
+    <h3 style="font-size: 26px; color: #e3c785; margin-bottom: 20px;">Mehndi Products</h3>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+      <div class="testimonial-card" data-aos="zoom-in">"Premium Mehndi Cone gave a deep rich color. Loved it!"<br><br><strong>- Sanya</strong></div>
+      <div class="testimonial-card" data-aos="zoom-in" data-aos-delay="100">"Eucalyptus oil worked wonders on the stain!"<br><br><strong>- Kajal</strong></div>
+      <div class="testimonial-card" data-aos="zoom-in" data-aos-delay="200">"Best piping bag set I’ve used – perfect control!"<br><br><strong>- Farah</strong></div>
+      <div class="testimonial-card" data-aos="zoom-in" data-aos-delay="300">"Classic cones had a silky smooth flow!"<br><br><strong>- Meena</strong></div>
+    </div>
+  </div>
+
+  <!-- Education & Classes -->
+  <div style="margin-top: 60px;">
+    <h3 style="font-size: 26px; color: #e3c785; margin-bottom: 20px;">Education & Classes</h3>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+      <div class="testimonial-card" data-aos="flip-left">"Basic to Advance course helped me start my own service!"<br><br><strong>- Lakshmi</strong></div>
+      <div class="testimonial-card" data-aos="flip-left" data-aos-delay="100">"Mixing & Application sessions were practical and easy!"<br><br><strong>- Zoya</strong></div>
+      <div class="testimonial-card" data-aos="flip-left" data-aos-delay="200">"The business tips shared were really helpful for beginners."<br><br><strong>- Isha</strong></div>
+      <div class="testimonial-card" data-aos="flip-left" data-aos-delay="300">"Loved how interactive the class was – highly recommend!"<br><br><strong>- Ritu</strong></div>
+    </div>
+  </div>
+</section>
+
+<!-- AOS Animation Script -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+</script>
+<!-- Instagram Section -->
+<section class="newsletter" style="background-color: #800000; color: #FFD700; padding: 50px 20px; text-align: center;">
+  <a href="https://www.instagram.com/abhennaart" target="_blank" style="text-decoration: none; color: #FFD700; display: inline-flex; align-items: center; gap: 10px; font-size: 20px;">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" style="width: 30px; height: 30px;">
+    @abhennaart
+  </a>
+</section>
+
+</body>
+</html>

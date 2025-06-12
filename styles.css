@@ -1,0 +1,237 @@
+/* Base styles */
+body {
+    background-color: #3a0400; /* Background color */
+    color: #fff; /* Text color */
+    font-family: Arial, sans-serif; /* Font style */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+header {
+    background-color: #3a0400; /* Header background color */
+    padding: 20px; /* Header padding */
+    display: flex; /* Flexbox for header layout */
+    justify-content: space-between; /* Space between elements */
+    align-items: center; /* Center items vertically */
+    border-bottom: 3px solid #c59d5f; /* Bottom border */
+}
+
+.logo {
+    display: flex; /* Flexbox for logo */
+    align-items: center; /* Center items vertically */
+}
+
+.logo img {
+    width: 60px; /* Logo width */
+    height: 60px; /* Logo height */
+    border-radius: 50%; /* Circular logo */
+    border: 3px solid #FFD700; /* Gold border */
+    padding: 5px; /* Padding around logo */
+    object-fit: cover; /* Maintain aspect ratio */
+}
+
+h1 {
+    font-size: 30px; /* Base font size for h1 */
+    color: #e3c785; /* h1 text color */
+    font-family: 'Garamond', serif; /* Font family for h1 */
+    margin-left: 15px; /* Space between logo and text */
+}
+
+nav ul {
+    list-style: none; /* Remove bullet points */
+    display: flex; /* Flexbox for navigation */
+    gap: 20px; /* Space between nav items */
+    margin: 0; /* Remove margin */
+    padding: 0; /* Remove padding */
+}
+
+nav a {
+    color: #FFD700; /* Link color */
+    text-decoration: none; /* Remove underline */
+    font-size: 18px; /* Base font size for links */
+}
+
+nav a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.hero {
+    text-align: center; /* Center hero text */
+    margin: 30px 0; /* Margin around hero section */
+    position: relative; /* For absolute positioning of hero text */
+}
+
+.hero img {
+    width: 100%; /* Full width hero image */
+    max-height: 500px; /* Max height for hero image */
+    object-fit: cover; /* Maintain aspect ratio */
+    opacity: 0.4; /* Image opacity */
+}
+
+.hero-text {
+    position: absolute; /* Absolute positioning */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center adjustment */
+    color: #fff; /* Text color */
+    text-align: center; /* Center text */
+}
+
+.hero-text h1 {
+    font-size: 50px; /* Base font size for hero heading */
+}
+
+.hero-text p {
+    font-size: 24px; /* Base font size for hero paragraph */
+    color: #e3c785; /* Paragraph text color */
+    line-height: 1.5; /* Line height */
+}
+
+/* Gallery Section */
+.gallery {
+    padding: 50px 20px; /* Padding around gallery */
+    text-align: center; /* Center gallery text */
+}
+
+.gallery h2 {
+    color: #800000; /* Gallery heading color */
+}
+
+.gallery-grid {
+    display: flex; /* Flexbox for gallery layout */
+    flex-wrap: wrap; /* Wrap items */
+    justify-content: center; /* Center items */
+    gap: 15px; /* Space between gallery items */
+}
+
+.gallery img {
+    width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    border: 2px solid #FFD700; /* Gold border for images */
+}
+
+/* Newsletter Section */
+.newsletter {
+    background-color: #800000; /* Background color for newsletter */
+    color: #FFD700; /* Text color for newsletter */
+    padding: 50px 20px; /* Padding around newsletter */
+    text-align: center; /* Center text */
+}
+
+.newsletter input[type="email"] {
+    padding: 10px; /* Padding for input */
+    width: 250px; /* Width of input */
+}
+
+.newsletter button {
+    background-color: #FFD700; /* Button background color */
+    color: #800000; /* Button text color */
+    padding: 10px 20px; /* Button padding */
+}
+
+/* Media Queries */
+
+/* Tablet styles */
+@media (max-width: 1024px) {
+    header {
+        flex-direction: column; /* Stack header items */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    h1 {
+        font-size: 30px; /* Adjust h1 font size */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack navigation items */
+        gap: 10px; /* Reduced space between items */
+    }
+
+    nav a {
+        font-size: 16px; /* Smaller font size for links */
+    }
+
+    .hero-text h1 {
+        font-size: 40px; /* Adjust hero heading for tablets */
+    }
+
+    .hero-text p {
+        font-size: 20px; /* Adjust paragraph size for tablets */
+    }
+
+    .gallery {
+        padding: 40px 10px; /* Adjust padding for gallery */
+    }
+
+    .newsletter {
+        padding: 40px 10px; /* Adjust padding for newsletter */
+    }
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Stack header items */
+        align-items: flex-start; /* Align items to the start */
+        padding: 10px; /* Reduced padding */
+    }
+
+    h1 {
+        font-size: 24px; /* Further reduce h1 font size */
+    }
+
+    nav {
+        margin-top: 10px; /* Space above the navigation */
+    }
+
+    nav a {
+        font-size: 14px; /* Smaller font size for links */
+    }
+
+    .hero-text h1 {
+        font-size: 30px; /* Further reduce hero heading size */
+    }
+
+    .hero-text p {
+        font-size: 18px; /* Further reduce paragraph size */
+    }
+
+    .gallery {
+        padding: 30px 5px; /* Adjust padding for gallery */
+    }
+
+    .newsletter input[type="email"] {
+        width: 100%; /* Full width input on mobile */
+    }
+}
+
+/* Small mobile styles */
+@media (max-width: 480px) {
+    header {
+        padding: 5px; /* Further reduce header padding */
+    }
+
+    h1 {
+        font-size: 20px; /* Reduce h1 font size for very small screens */
+    }
+
+    .hero-text h1 {
+        font-size: 24px; /* Reduce hero heading for very small screens */
+    }
+
+    .hero-text p {
+        font-size: 16px; /* Reduce paragraph size for very small screens */
+    }
+
+    nav a {
+        font-size: 12px; /* Smaller font size for links */
+    }
+
+    .gallery {
+        padding: 20px 2px; /* Adjust padding for gallery */
+    }
+
+    .newsletter {
+        padding: 20px 2px; /* Adjust padding for newsletter */
+    }
+}

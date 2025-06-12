@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Abi Henna</title>
+    <style>
+        body {
+            background-color: #3a0400; /* Same background color as the front page */
+            font-family: Arial, sans-serif;
+            color: #e3c785; /* Set text color for consistency */
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #3a0400; 
+            padding: 20px; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            border-bottom: 3px solid #c59d5f;
+        }
+        .logo {
+            display: flex; 
+            align-items: center;
+        }
+        .logo img {
+            height: 60px; 
+            border-radius: 50%; 
+            border: 3px solid #FFD700; 
+            padding: 5px;
+        }
+        nav ul {
+            list-style: none; 
+            display: flex; 
+            gap: 20px; 
+            margin: 0; 
+            padding: 0;
+        }
+        nav a {
+            color: #FFD700; 
+            text-decoration: none; 
+            font-size: 18px;
+            position: relative;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .gallery {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .gallery-grid {
+            display: grid; /* Use grid for better alignment */
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Responsive columns */
+            gap: 15px;
+            justify-items: center; /* Center items in the grid */
+        }
+        .gallery-item {
+            border: 2px solid #FFD700;
+            padding: 5px;
+            width: 150px; /* Set a specific width for gallery items */
+        }
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+        }
+        .navigation-buttons {
+            margin: 20px 0; /* Space around the buttons */
+        }
+        .navigation-buttons button {
+            background-color: #FFD700; /* Button color */
+            border: none;
+            color: #3a0400; /* Text color for buttons */
+            padding: 10px 15px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 0 10px; /* Space between buttons */
+        }
+        .navigation-buttons button:hover {
+            background-color: #c59d5f; /* Darken button color on hover */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo" style="display: flex; align-items: center;">
+        <img src="logo.png" alt="Abi Henna Logo" style="width: 60px; height: 60px; border-radius: 50%; border: 3px solid #FFD700; padding: 5px; object-fit: cover;">
+        <h1 style="font-size: 30px; color: #e3c785; font-family: 'Garamond', serif; margin-left: 15px;">Abi Henna</h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html" style="color: #fff;">Gallery</a></li>
+            <li><a href="mehndi.html">Mehndi Products</a></li>
+            <li><a href="bridal.html">Bridal Mehndi Services</a></li>
+            <li><a href="education.html">Education & Certification</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="gallery">
+    <h2 style="color: #FFD700;">Image Gallery</h2>
+    <div class="gallery-grid">
+        <div class="gallery-item">
+            <img src="images/image1.jpg" alt="Image 1">
+        </div>
+        <div class="gallery-item">
+            <img src="images/image2.jpg" alt="Image 2">
+        </div>
+        <div class="gallery-item">
+            <img src="images/image3.jpg" alt="Image 3">
+        </div>
+        <div class="gallery-item">
+            <img src="images/image4.jpg" alt="Image 4">
+        </div>
+        <div class="gallery-item">
+            <img src="images/image5.jpg" alt="Image 5">
+        </div>
+        <div class="gallery-item">
+            <img src="images/image6.jpg" alt="Image 6">
+        </div>
+        <div class="gallery-item">
+            <img src="images/image7.jpg" alt="Image 7">
+        </div>
+        <div class="gallery-item">
+            <img src="images/image8.jpg" alt="Image 8">
+        </div>
+        <div class="gallery-item">
+            <img src="images/image9.jpg" alt="Image 9">
+        </div>
+        <div class="gallery-item">
+            <img src="images/image10.jpg" alt="Image 10">
+        </div>
+        <div class="gallery-item">
+            <img src="images/image11.jpg" alt="Image 11">
+        </div>
+        <div class="gallery-item">
+            <img src="images/image12.jpg" alt="Image 12">
+        </div>
+        <div class="gallery-item">
+            <img src="images/image13.jpg" alt="Image 13">
+        </div>
+        <div class="gallery-item">
+            <img src="images/image14.jpg" alt="Image 14">
+        </div>
+        <div class="gallery-item">
+            <img src="images/image15.jpg" alt="Image 15">
+        </div>
+    </div>
+
+
+
+        <!-- Gallery Section with Borders -->
+    <section class="gallery" style="padding: 50px 20px; text-align: center;">
+        <h2 style="color: #f4ad07;">Image Gallery</h2>
+        <div class="gallery-grid" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 15px;">
+            <div style="border: 2px solid #FFD700; padding: 5px;">
+                <img src="images/image1.jpg" alt="Image 1" style="width: 100%; height: auto;">
+            </div>
+            <div style="border: 2px solid #FFD700; padding: 5px;">
+                <img src="images/image2.jpg" alt="Image 2" style="width: 100%; height: auto;">
+            </div>
+            <div style="border: 2px solid #FFD700; padding: 5px;">
+                <img src="images/image3.jpg" alt="Image 3" style="width: 100%; height: auto;">
+            </div>
+            <div style="border: 2px solid #FFD700; padding: 5px;">
+                <img src="images/image4.jpg" alt="Image 4" style="width: 100%; height: auto;">
+            </div>
+            <div style="border: 2px solid #FFD700; padding: 5px;">
+                <img src="images/image5.jpg" alt="Image 4" style="width: 100%; height: auto;">
+            </div>
+            <div style="border: 2px solid #FFD700; padding: 5px;">
+                <img src="images/image6.jpg" alt="Image 4" style="width: 100%; height: auto;">
+            </div>
+            <div style="border: 2px solid #FFD700; padding: 5px;">
+                <img src="images/image7.jpg" alt="Image 4" style="width: 100%; height: auto;">
+            </div>
+        </div>
+    </section>
+    <!-- Navigation Buttons -->
+    <div class="navigation-buttons">
+        <button onclick="window.location.href='gallery_previous.html'">Previous</button>
+        <button onclick="window.location.href='gallery_next.html'">Next</button>
+    </div>
+</section>
+
+</body>
+</html>
